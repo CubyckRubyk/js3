@@ -140,7 +140,23 @@ let d = [2, 23, 21, 4, 3, 6, 8, 34, 76, 89, 22, 44, -12];
    ];
    for (let u = 0; u < users.length; u++) {
        const user = users[u];
-       if user
+       if (user.status === true ) {
+           console.log(user);
+       }
+   }
+
+   for (let u = 0; u < users.length; u++) {
+       const user = users[u];
+       if (user.status === false ) {
+           console.log(user);
+       }
+   }
+   for (let u = 0; u < users.length; u++) {
+       const user = users[u];
+       if (user.age > 30 ) {
+           console.log(user);
+       }
+
    }
    // за допомоги циклу вивести:
      //   - користувачів зі статусом true
